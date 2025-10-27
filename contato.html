@@ -1,0 +1,154 @@
+
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Modelo de Site Empresarial</title>
+    <meta name="author" content="Henrique Vieira">
+    <meta name="Description" content="Conhecendo HTML5 / CSS3">
+    <meta name="robots" content="index, follow">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='meu_estilo.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!--Inicio código cabeçalho-->
+    <header>
+        <div class="container_1">
+            <a href="index.html"><img src="img/Logo_Principal.png" alt="Logo do Site" title="Logo do Site"></a>
+            <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button><!--icone do menu-->
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nossa_empresa.html">Nossa Empresa</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Fim código cabeçalho-->
+
+
+    <!--Inicio código corpo-->
+    <!--Inicio pagina Contato-->
+        <section class="container">
+            <div class="divs" align="center">
+                <h2>Entre em Contato</h2>
+                Preencha o formulário e responderemos o mais breve.
+            </div>
+        </section>
+
+
+        <section class="container">
+            <form action="https://formsubmit.co/osmar.zafalon@gmail.com" method="POST" class="contato-form">
+                <input type="hidden" name="_subject" value="Novo contato do site!"  type="hidden">
+                <input type="hidden" name="_next" value="https://zafalon.free.nf/obrigado.html"  type="hidden">
+
+
+                <!--Evita soam bots-->
+                <input type="text" name="_honey" style="display:none">
+               
+                <!--Evita redirecionamento automotivo para o formsubmit-->
+                <input type="hidden" name="_captcha" value="false">
+
+
+                <!--Assunto di e-mail-->
+                <input type="hidden" name="_subject" value="Novo contato do site!">
+
+
+                <!-- Página para onde redirecionar após envio-->
+                <input type="hidden name=_text" value="https://zafalon.free.nf">
+ 
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
+
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="5" required></textarea>
+           
+                <button type="reset" class="btn">Limpar</button>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+        <hr>
+        <section class="container">
+            <div class="divs" align="center">
+                <h2>Participe da nossa Pesquisa</h2>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <div class="image">
+                <a href="pesquisa.html">
+                    <img src="img/pesquisa.png" title="Imagem de pesquisa" alt="Imagem de pesquisa">
+                </a>
+            </div>
+        </section>
+        <hr>
+        <section class="container">
+            <div class="divs" align="center">
+                <h2>Visite nossas Redes Sociais</h2>
+                <!--Ícones de redes sociais-->
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="social-ico">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+
+                    <a href="https://instagram.com" target="_blank" class="social-ico">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+
+                    <a href="https://x.com" target="_blank" class="social-ico">
+                        <i class="fab fa-x"></i>
+                    </a>
+
+
+                    <a href="https://linkedin.com" target="_blank" class="social-ico">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+
+                </div>
+            </div>
+        </section>
+        <hr>
+   
+    <!--Fim pagina Contato-->
+    <!--Fim código corpo-->
+
+
+    <!--Inicio código rodape-->
+    <footer>
+        <p>Copy - 2025 © Todos os direitos reservado - Osmar Zafalon</p><br>
+        <p>
+            <img src="img/site-responsivo.png" alt="Responsivo" title="Responsivo">
+            <img src="img/w3c-validation-html.png" alt="html validado" title="html validado">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="CSS válido!" />
+        </p>
+    </footer>
+    <!--Fim código rodape-->
+<script src="meu_javascript.js"></script>
+</body>
+</html>
+<!-- <form action="http://www.fundacaobradesco.org.br/cgi.sys/formmail.pl" method="post">
+                <input name="recipient" value="osmar.zafalon@fundacaobradesco.org.br" type="hidden">
+                <input name="subject" value="Contato site" type="hidden">
+                <input name="redirect" value="contatoenviado.html" type="hidden"> -->
+

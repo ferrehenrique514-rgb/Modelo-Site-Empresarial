@@ -1,0 +1,573 @@
+/*Inicio do CSS global*/
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height:1.6;
+    color:#333;
+    background-color:#f4f4f9;
+    width:80%;
+    margin:auto;
+}
+header{
+    color:#333;
+    background-color:black;
+    padding:1rem 0;
+    box-shadow:3px 3px 3px rgba(0,0,0,0.3);
+}
+.container_1{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:0px auto;
+    padding:0px 20px;
+}
+.container{
+    align-items:center;
+    max-width:1200px;
+    margin:0px auto;
+    padding:0px 0px;
+}
+footer{
+    color:#ffffff;
+    background-color:black;
+    text-align:center;
+    padding:5px;
+    margin-top:26px;
+}
+/*Fim do CSS global*/
+
+
+/*Inicio CSS Menu-----------------------------------*/
+nav ul{
+    list-style: none;
+    display:flex;
+    gap:22px;
+    margin:0px;
+    padding:0px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:#ffffff;
+    font-weight:bold;
+    padding:10px;
+}
+nav ul li a:hover{
+    color:#007BFF;
+}
+#menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    font-size:2rem;
+    cursor:pointer;
+    color:#333;
+}
+#menu-toggle:hover{
+    background-color:#ddd;
+    border-radius:5px;
+    padding:6px;
+}
+/*Fim CSS Menu--------------------------------------*/
+/*Inicio CSS pagina home---------------------------------------------*/
+/*Inicio CSS slides*/
+.slideshow{
+    position:relative;
+    max-width:100%;
+    margin:2rem auto;
+    overflow:hidden;
+    box-shadow:3px 3px 3px rgba(0,0,0,0.3);
+    border-radius:5px;
+}
+.slides{
+    display:flex;
+    transition:transform 0.9s ease-in-out;
+    width:100%;
+}
+.slides img{
+    width:100%;
+    flex-shrink:0;
+}
+.slideshow-controls{
+    position:absolute;
+    top:50%;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    transform:translateY(-50%);
+}
+.slideshow-controls button{
+    background-color:rgba(0,0,0,0.5);
+    color:#fff;
+    border:none;
+    padding:0.5rem 1rem;
+    cursor:pointer;
+}
+/*Fim CSS slides*/
+
+
+/*Inicio CSS section*/
+.divs{
+    flex:1 1 calc(50% - 1rem);
+    background-color:#ffffff;
+    padding:1.5rem;
+    border-radius:10px;
+    box-shadow:0px 2px 5px rgba(0,0,0,0.1);
+    margin:10px 0px;
+    background-image: linear-gradient(rgb(178, 222, 245), rgb(255, 255, 255));
+}
+.divs h2{
+    color:#007BFF;
+    margin-bottom:1rem;
+}
+.divs p{
+    color:#555;
+    text-align:justify;
+}
+.div2s{
+    flex:1 1 calc(50% - 1rem);
+    background-color:#ffffff;
+    padding:1.5rem;
+    border-radius:10px;
+    box-shadow:0px 2px 5px rgba(0,0,0,0.1);
+    margin:10px 0px;
+    text-align:center
+}
+.div2s h2{
+    color:#007BFF;
+    margin-bottom:1rem;
+}
+.div2s p{
+    color:#555;
+    text-align:justify;
+}
+/*Fim CSS section*/
+/*Inicio CSS botão*/
+.btn{
+    display:inline;
+    padding:0.75rem 1rem;
+    background:#007BFF;
+    color:#ffffff;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bolder;
+    font-size:10px;
+    transition:background 0.3s;
+}
+.btn:hover{
+    background-color:#0056b3;
+}
+/*Fim CSS botão*/
+/*Fim CSS pagina home---------------------------------------------*/
+/*=====================================Inicio CSS Responsivo===================================*/
+@media(max-width:768px){
+    #menu ul{
+        display:none;
+        flex-direction:column;
+        gap:0px;
+        background:#4480c0;
+        position:absolute;
+        top:80px;
+        right:50px;
+        box-shadow:0px 4px 6px rgba(5,0,0,0.5);
+        z-index:1000;
+    }
+    #menu ul li{
+        text-align:center;
+        padding:6px 0px;
+    }
+    #menu-toggle{
+        display:block;
+    }
+    #menu.open ul{
+        display:flex;
+        border-radius:10px;
+    }
+    #menu ul li:hover{
+        color:black;
+        border-radius:10px;
+        background-color:#ddd;
+    }
+    .divs h2{
+        font-size:16px;
+    }
+    .product-card h3{
+        font-size:16px;
+    }
+    .project-card h3{
+        font-size:16px;
+    }
+}
+/*=======================================Fim CSS Responsivo====================================*/
+
+
+
+
+/*Inicio CSS pagina Nossa Empresa---------------------------------------------*/
+section .image img{
+    max-width:100%;
+    height:auto;
+    border-radius:10px;
+}
+hr.gradiente{
+    border:0px;
+    height:10px;
+    background-color:linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+hr{
+    border:1px solid #0382f9;
+    margin:20px 0px;
+    box-shadow:0px 2px 5px rgba(0, 0, 0, 0.75);
+}
+/*Fim CSS pagina Nossa Empresa------------------------------------------------*/
+
+
+/*Inicio CSS pagina Produtos--------------------------------------------------*/
+            /*Grade de Produtos*/
+
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+    gap:2rem;
+    margin-top:2rem;
+}
+.product-card{
+    background-color:#fff;
+    padding:1.5rem;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.product-card img{
+    max-width:100%;
+    height:auto;
+    border-radius:10px;
+    margin-bottom:1rem;
+}
+.product-card h3{
+    margin-bottom:1.5rem;
+    color:#004085;
+}
+.product-card p{
+    margin-bottom:1rem;
+    font-size:1rem;
+    color:#555;
+    font-style:italic;
+}
+.product-card .btn{
+    display:inline-block;
+    padding:0.75rem 1.5rem;
+    background-color:#007BFF;
+    font-size:12px;
+    color:#FFF;
+    text-decoration:none;
+    transition:background-color 0.3s;
+    width:100%;
+}
+.product-card .btn:hover{
+    background-color:#044285;
+}
+/*Fim CSS pagina Produtos-----------------------------------------------------*/
+
+
+/*Inicio CSS pagina Projetos--------------------------------------------------*/
+            /*Grade de Projetos*/
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:2rem;
+    margin-top:2rem;
+}
+.project-card{
+    background-color:#f9f9f9;
+    padding:1.5rem;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition:transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+.project-card img{
+    max-width:100%;
+    height:auto;
+    border-radius:10px;
+    margin-bottom:1rem;
+}
+.project-card h3{
+    margin-bottom:1.5rem;
+    color:#004085;
+}
+.project-card p{
+    font-size:1rem;
+    color:#555;
+    font-style:italic;
+    margin-bottom:14px;
+}
+.project-card .btn{
+    display:inline-block;
+    padding:0.75rem 1.5rem;
+    background-color:#007BFF;
+    font-size:12px;
+    color:#FFF;
+    text-decoration:none;
+    transition:background-color 0.3s;
+    width:100%;
+}
+.project-card .btn:hover{
+    background-color:#044285;
+}
+/*Fim CSS pagina Projetos-----------------------------------------------------*/
+
+
+/*Inicio CSS pagina Contato---------------------------------------------------*/
+            /*css inicio formulário*/
+.contato-form{
+    max-width:600px;
+    margin:2rem auto;
+    padding:2rem;
+    background:#f9f9f9;
+    border-radius:10px;
+    box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contato-form label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:0.5rem;
+    color:#333;
+}
+.contato-form input,
+.contato-form textarea{
+    width:100%;
+    padding:1rem;
+    margin-bottom:1rem;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:1rem;
+}
+.contato-form textarea{
+    resize:none;
+}
+.contato-form .btn{
+    display:inline-block;
+    padding:0.75rem 1.5rem;
+    background-color:#007BFF;
+    font-size:12px;
+    color:#FFF;
+    text-decoration:none;
+    transition:background-color 0.3s;
+    width:49%;
+    border:none;
+    border-radius:5px;
+}
+.contato-form .btn:hover{
+    background-color:#044285;
+}
+        /*css Fim formulário*/
+        /*css redes sociais*/
+.social-icons{
+    text-align:center;
+    margin-top:1rem;
+}
+.social-ico{
+    display:inline-block;
+    margin:0px 10px;
+    font-size:20px;
+    color:#007BFF;
+    transition:color 0.3s;
+}
+.social-ico:hover{
+    color:#044285;
+    transform:translateY(-5px);
+}
+.image{
+    width:100%;
+}
+/*Fim CSS pagina Contato-------------------------------------------------------*/
+
+
+/*Inicio CSS pagina Pesquisa---------------------------------------------------*/
+            /*css inicio formulário Pesquisa*/
+
+
+.pesquisa-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+.form-bloco {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.form-bloco2 {
+    flex: 1 1 45%;
+    display:inline;
+    flex-direction: column;
+    gap: 12px;
+    font-size:12px;
+}
+
+
+.full-width {
+    flex: 1 1 100%;
+}
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 12px;
+    transition: border-color 0.3s ease;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+textarea {
+    resize:none;
+}
+
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width:100%;
+}
+
+
+legend {
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+
+.pesquisa-form .btn{
+    margin-top:15px;
+    margin:auto;
+    display:inline-block;
+    padding:10px 10px;
+    background-color:#007BFF;
+    font-size:12px;
+    color:#FFF;
+    text-decoration:none;
+    transition:background-color 0.3s;
+    width:48%;
+    border:none;
+    border-radius:5px;
+}
+.pesquisa-form .btn:hover{
+    background-color:#044285;
+}
+
+
+/* Manter dois blocos lado a lado */
+.pesquisa-form > .form-bloco {
+    min-width: 45%;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .form-bloco > label,
+    .form-bloco > input,
+    .form-bloco > select,
+    .form-bloco > textarea {
+        flex: 1 1 100%;
+    }
+
+
+   /* fieldset{
+        display: block;
+        margin-bottom: 8px;
+    }
+    .form-bloco{
+        width:100%;
+    }*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media(max-width:768px){
+    .form-bloco{
+        width:100%;
+    }
+}*/  
+/*CSS Extra pesquisa*/
+/*.pesquisa-form fieldset{
+    background-color:#ffea00;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/*Fim CSS pagina Pesquisa------------------------------------------------------*/
+
+

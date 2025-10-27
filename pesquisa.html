@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Modelo de Site Empresarial</title>
+    <meta name="author" content="Henrique Vieira">
+    <meta name="Description" content="Conhecendo HTML5 / CSS3">
+    <meta name="robots" content="index, follow">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='meu_estilo.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+<body>
+    <!--Inicio código cabeçalho-->
+    <header>
+        <div class="container_1">
+            <a href="index.html"><img src="img/android-icon-96x96.png" alt="Logo do Site" title="Logo do Site"></a>
+            <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button><!--icone do menu-->
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nossa_empresa.html">Nossa Empresa</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Fim código cabeçalho-->
+    <hr>
+    <!--Inicio código corpo-->
+    <!--Inicio pagina Pesquisa-->
+        <section class="container">
+            <div class="divs" align="center">
+                <h2>Pesquisa de Usuário</h2>
+                Preencha o formulário abaixo.
+            </div>
+        </section>
+        <hr>
+        <section class="container">
+            <form action="envia_contato.php" method="post" class="pesquisa-form">
+
+
+                <!--Bloco_01-->
+                <div class="form-bloco">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required>
+
+
+                    <label for="signo">Signo:</label>
+                    <select id="signo" name="signo" required>
+                        <option value="" disabled selected>Selecione seu signo</option>
+                        <option>Áries</option>
+                        <option>Touro</option>
+                        <option>Gêmeos</option>
+                        <option>Câncer</option>
+                        <option>Leão</option>
+                        <option>Virgem</option>
+                        <option>Libra</option>
+                        <option>Escorpião</option>
+                        <option>Sagitário</option>
+                        <option>Aquário</option>
+                        <option>Peixes</option>
+                        <option>Capricórnio</option>
+                    </select>
+
+
+                    <label for="cor">Cor Preferida:</label>
+                    <input type="text" id="cor" name="cor" placeholder="Ex: verde, vermelho,..." required>
+                </div>
+
+
+                <!--Bloco_02-->
+                <div class="form-bloco">
+                    <label for="time">Time de Futebol:</label>
+                    <input type="text" id="time" name="time" placeholder="Seu Time do coração" required>
+
+
+                    <label for="profissao">Profissão:</label>
+                    <input type="text" id="profissao" name="profissao" placeholder="Ex: Professor, Engenheiro,..." required>
+
+
+                    <label for="formacao">Formação:</label>
+                    <input type="text" id="formacao" name="formacao" placeholder="Ex: Ensino Médio, Graduação,..." required>
+
+
+                    <label for="livro">Último livro lido:</label>
+                    <input type="text" id="livro" name="livro" placeholder="Ex: Autor ou Nome do livro" required>
+                </div>
+
+
+                <!--Bloco_03-->
+                <div class="form-bloco full-width">
+                    <label for="habitos">Hábitos:</label>
+                    <textarea id="habitos" name="habitos" placeholder="Fale um pouco sobre seus Hábitos." rows="3" maxlength="512"></textarea>
+
+
+                    <label for="hobbies">Hobbies:</label>
+                    <textarea id="hobbies" name="hobbies" placeholder="Fale o que gosta de fazer nas horas livres." rows="3" maxlength="230"></textarea>
+                </div>
+
+
+                <!------------formulário Extra-------------------->
+        <div class="form-bloco2">
+            <h4>Qual país deseja conhecer?</h4>
+            <fieldset class="form-bloco2">
+                <legend><label>País</label></legend>
+
+
+                <input type="radio" id="opcao" name="pais" checked>
+                <label for="pais">Estados Unidos:</label><br>
+
+
+                <input type="radio" id="opcao" name="pais">
+                <label for="pais">Dinamarca:</label><br>
+
+
+                <input type="radio" id="opcao" name="pais">
+                <label for="pais">Egito:</label><br>
+
+
+                <input type="radio" id="opcao" name="pais">
+                <label for="pais">Indonesia:</label>
+
+
+            </fieldset>
+        </div>
+
+
+        <div class="form-bloco2">
+            <h4>Qual Linguagem você interessa?</h4>
+            <fieldset class="form-bloco2">
+                <legend><label>Linguagem</label></legend>
+
+
+                <input type="checkbox" id="opcao_01" name="linguagem_01" checked>
+                <label for="linguagem_01">Python:</label><br>
+
+
+                <input type="checkbox" id="opcao_02" name="linguagem_02">
+                <label for="linguagem_02">JavaScript:</label><br>
+
+
+                <input type="checkbox" id="opcao_03" name="linguagem_03">
+                <label for="linguagem_03">PHP:</label><br>
+
+
+                <input type="checkbox" id="opcao_04" name="linguagem_04">
+                <label for="linguagem_04">C#:</label>
+
+
+            </fieldset>
+        </div>
+           
+                <button type="reset" class="btn">Limpar</button>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+        <hr>
+       
+    <!--Fim pagina Pesquisa-->
+    <!--Fim código corpo-->
+
+
+    <!--Inicio código rodape-->
+    <footer>
+        <p>Copy - 2025 © Todos os direitos reservado - Osmar Zafalon</p><br>
+        <p>
+            <img src="img/site-responsivo.png" alt="Responsivo" title="Responsivo">
+            <img src="img/w3c-validation-html.png" alt="html validado" title="html validado">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="CSS válido!" />
+        </p>
+    </footer>
+    <!--Fim código rodape-->
+<script src="meu_javascript.js"></script>
+</body>
+</html>
+<!-- <form action="http://www.fundacaobradesco.org.br/cgi.sys/formmail.pl" method="post">
+                <input name="recipient" value="osmar.zafalon@fundacaobradesco.org.br" type="hidden">
+                <input name="subject" value="Contato site" type="hidden">
+                <input name="redirect" value="contatoenviado.html" type="hidden"> -->
+

@@ -1,0 +1,140 @@
+
+
+/*Inicio CSS pagina Pesquisa---------------------------------------------------*/
+            /*css inicio formulário Pesquisa*/
+
+.pesquisa-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+.form-bloco {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.form-bloco2 {
+    flex: 1 1 45%;
+    display:inline;
+    flex-direction: column;
+    gap: 12px;
+    font-size:12px;
+}
+
+.full-width {
+    flex: 1 1 100%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.pesquisa-form input[type="text"],
+.pesquisa-form input[type="number"],
+.pesquisa-form select,
+.pesquisa-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 12px;
+    transition: border-color 0.3s ease;
+}
+
+.input{
+    background-color:#fb5603;
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+textarea {
+    resize:none;
+}
+
+.pesquisa-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width:100%;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.pesquisa-form .btn{
+    margin-top:15px;
+    margin:auto;
+    display:inline-block;
+    padding:10px 10px;
+    background-color:#007BFF;
+    font-size:12px;
+    color:#FFF;
+    text-decoration:none;
+    transition:background-color 0.3s;
+    width:48%;
+    border:none;
+    border-radius:5px;
+}
+.pesquisa-form .btn:hover{
+    background-color:#044285;
+}
+
+/* Manter dois blocos lado a lado */
+.pesquisa-form > .form-bloco {
+    min-width: 45%;
+}
+
+
+
+@media (max-width: 768px) {
+    .form-bloco > label,
+    .form-bloco > input,
+    .form-bloco > select,
+    .form-bloco > textarea {
+        flex: 1 1 100%;
+    }
+
+   /* fieldset{
+        display: block;
+        margin-bottom: 8px;
+    }
+    .form-bloco{
+        width:100%;
+    }*/
+}
+
+
+/*@media(max-width:768px){
+    .form-bloco{
+        width:100%;
+    }
+}*/   
+/*CSS Extra pesquisa*/
+/*.pesquisa-form fieldset{
+    background-color:#ffea00;
+} */
+
+/*Fim CSS pagina Pesquisa------------------------------------------------------*/
